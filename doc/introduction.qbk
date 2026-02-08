@@ -57,7 +57,7 @@ C++11 lambda functions are necessary to use this library without manually writin
 That said, this library implementation does not use C++11 features and should work on most modern C++ compilers (see __Getting_Started__).
 ]
 
-In addition to contracts for non-member functions as shown the in the example above, this library allows to program contracts for constructors, destructors, and member functions.
+In addition to contracts for non-member functions as shown in the example above, this library allows to program contracts for constructors, destructors, and member functions.
 These can check class invariants and can also /subcontract/ inheriting and extending contracts from base classes (see [@../../example/features/introduction_public.cpp =introduction_public.cpp=] and __Public_Function_Overrides__):
 [footnote
 The `pushable` base class is used in this example just to show subcontracting, it is somewhat arbitrary and it will likely not appear in real production code.
