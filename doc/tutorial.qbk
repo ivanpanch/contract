@@ -193,7 +193,7 @@ Non-void virtual public functions and non-void public function overrides must al
 
 [section Old Values]
 
-When old values are used in postconditions or in exception guarantees, programmes are responsible to declare local variables before the contract and to assign them to related old value expressions using [macroref BOOST_CONTRACT_OLDOF].
+When old values are used in postconditions or in exception guarantees, programmers are responsible to declare local variables before the contract and to assign them to related old value expressions using [macroref BOOST_CONTRACT_OLDOF].
 [footnote
 The name of a local variable that holds an old value is arbitrary, but [^old_['variable-name]] is often used in this documentation.
 ]
@@ -400,7 +400,7 @@ For example (see [@../../example/features/public.cpp =public.cpp=]):
 
 It is not possible to specify preconditions using `.precondition(...)` for constructors (this library will generate a compile-time error if `.precondition(...)` is used on the object returned by [funcref boost::contract::constructor]).
 Constructor preconditions are specified using the [classref boost::contract::constructor_precondition] base class instead (same considerations as the ones made in __Preconditions__ apply also to the precondition functor passed to [classref boost::contract::constructor_precondition]).
-Programmes should not access the object `*this` from constructor preconditions (because the object does not exists yet before the constructor body is executed).
+Programmers should not access the object `*this` from constructor preconditions (because the object does not exist yet before the constructor body is executed).
 [footnote
 See __No_Lambda_Functions__ to enforce this constraint at compile-time (but not recommended because of extra boiler-plate code).
 ]
