@@ -629,7 +629,7 @@ Virtual public functions must declare an extra trailing parameter of type [class
 [footnote
 The name of this extra parameter is arbitrary, but `v` is often used in this documentation.
 ]
-This extra parameter is the last parameter and it has a default value so it does not alter the calling interface of the virtual function (callers will rarely, if ever, have to explicitly deal with this extra parameter a part from when manipulating the virtual function type directly for function pointer type-casting, etc.).
+This extra parameter is the last parameter and it has a default value so it does not alter the calling interface of the virtual function (callers will rarely, if ever, have to explicitly deal with this extra parameter apart from when manipulating the virtual function type directly for function pointer type-casting, etc.).
 Programmers must pass the extra virtual parameter as the very first argument to all [macroref BOOST_CONTRACT_OLDOF] and [funcref boost::contract::public_function] calls in the virtual public function definition.
 [footnote
 *Rationale:*
