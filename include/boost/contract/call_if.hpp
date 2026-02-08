@@ -452,7 +452,7 @@ struct call_if_statement<false, Then,
     }
     
     /**
-    Specify an else-if-branch functor template (using a nullary boolen
+    Specify an else-if-branch functor template (using a nullary boolean
     meta-function).
 
     @param f    Else-if-branch nullary functor template.
