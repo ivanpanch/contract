@@ -531,7 +531,7 @@ At destruction instead (enclosing destructor exit):
 
 # Check static class invariants, by calling [^['type-of]]`(*this)::static_invariant()`.
 # If the destructor body did not throw an exception:
-    # Check postconditions, by calling the nullay functor [^['s]]`()` passed to `.postcondition(`[^['s]]`)`.
+    # Check postconditions, by calling the nullary functor [^['s]]`()` passed to `.postcondition(`[^['s]]`)`.
 # Else (even if destructors should generally be programmed not to throw in C++):
     # Check non-static class invariants, by calling `this->invariant()` (because the object was not successfully destructed).
     # Check exception guarantees, by calling the nullary functor [^['e]]`()` passed to `.except(`[^['e]]`)`.
