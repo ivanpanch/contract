@@ -68,7 +68,7 @@ Preconditions must appear before postconditions and exception guarantees when th
 C++11 lambda functions are convenient to program preconditions, but any other nullary functor can be used (see __No_Lambda_Functions__).
 [footnote
 Lambda functions with no parameters can be programmed in C++11 as `[...] () { ... }` but also equivalently as `[...] { ... }`.
-This second from is often used in this documentation omitting the empty parameter list `()` for brevity.
+This second form is often used in this documentation omitting the empty parameter list `()` for brevity.
 ]
 For example, for [funcref boost::contract::function] (similarly for public functions, instead destructors do not have preconditions and constructors use [classref boost::contract::constructor_precondition], see __Public_Functions__, __Destructors__, and __Constructors__):
 
