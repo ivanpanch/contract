@@ -275,8 +275,8 @@ The library does not support contracts for functions and classes declared `const
 In general, it might be useful to specify contracts for `constexpr` functions and literal classes.
 However, the current implementation of this library cannot support contracts for `constexpr` functions and classes because C++ does not currently allow `constexpr` functions to do the following:
 Declare local variables of (literal) types with non-trivial `constexpr` destructors (this RAII technique is used by this library to check invariants, postconditions, and exceptions guarantees at exit);
-Call other `constexpr` functions using try-catch statements (used by this library to report contract assertion failures and catch any other exception that might be thrown when evaluating the asserted conditions);
-Use lambda functions (used by this library for convenience to program functors that that check preconditions, postconditions, and exception guarantees).
+call other `constexpr` functions using try-catch statements (used by this library to report contract assertion failures and catch any other exception that might be thrown when evaluating the asserted conditions);
+use lambda functions (used by this library for convenience to program functors that check preconditions, postconditions, and exception guarantees).
 Also note that even if supported, contracts for `constexpr` functions probably would not use old values (because `constexpr` prevents functions from having any side effect visible to the caller and variables recording such side-effects are usually the candidates for old value copies) and subcontracting (because `constexpr` functions cannot be virtual).
 ]
 
