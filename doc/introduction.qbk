@@ -37,7 +37,7 @@ precondition assertion "x < std::numeric_limits<int>::max()" failed: file "intro
 
 Instead, if there is a bug in the implementation of `inc` so that `x` is not incremented by `1` after the execution of the function body then the program will terminate with an error message similar to the following (and it will be evident that the bug is in `inc` body):
 [footnote
-In this example the function body is composed of a single trivial instruction `++x` so it easy to check by visual inspection that it does not contain any bug and it will always increment `x` by `1` thus the function postcondition will never fail.
+In this example the function body is composed of a single trivial instruction `++x` so it is easy to check by visual inspection that it does not contain any bug and it will always increment `x` by `1` thus the function postcondition will never fail.
 In real production code, function bodies are rarely this simple and can hide bugs which make checking postconditions useful.
 ]
 
