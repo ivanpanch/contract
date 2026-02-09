@@ -437,7 +437,7 @@ namespace boost { namespace contract {
 /**
 Set failure handler for implementation checks.
 
-Set a new failure handler and returns it.
+Set a new failure handler and return it.
 
 @b Throws: This is declared @c noexcept (or @c throw() before C++11).
 
