@@ -232,7 +232,7 @@ class old_ptr_if_copyable;
 /**
 Old value pointer that requires the pointed old value type to be copyable.
 
-This pointer can be set to point an actual old value copy using either
+This pointer can be set to point to an actual old value copy using either
 @RefMacro{BOOST_CONTRACT_OLDOF} or @RefFunc{boost::contract::make_old} (that is
 why this class does not have public non-default constructors):
 
