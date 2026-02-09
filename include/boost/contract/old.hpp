@@ -351,7 +351,7 @@ This pointer can be set to point to an actual old value copy using either
 @RefMacro{BOOST_CONTRACT_OLDOF} or @RefFunc{boost::contract::make_old}:
 
 @code
-template<typename T> // Type `T` might or not be copyable.
+template<typename T> // Type `T` might or might not be copyable.
 class u {
 public:
     virtual void f(..., boost::contract::virtual_* v = 0) {
@@ -561,7 +561,7 @@ class old_pointer { // Copyable (as *).
 public:
     /**
     Convert this object to an actual old value pointer for which the old value
-    type @c T might or not be copyable.
+    type @c T might or might not be copyable.
 
     For example, this is implicitly called when assigning or initializing old
     value pointers of type @c boost::contract::old_ptr_if_copyable.
