@@ -129,7 +129,7 @@ namespace boost { namespace contract {
 Trait to check if an old value type can be copied or not.
 
 By default, this unary boolean meta-function is equivalent to
-@c boost::is_copy_constructible<T> but programmers can chose to specialize it
+@c boost::is_copy_constructible<T> but programmers can choose to specialize it
 for user-defined types (in general some kind of specialization is also needed on
 compilers that do not support C++11, see
 <a href="http://www.boost.org/doc/libs/release/libs/type_traits/doc/html/boost_typetraits/reference/is_copy_constructible.html">
