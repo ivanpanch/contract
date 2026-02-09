@@ -56,7 +56,7 @@ Disable Contract Compilation}).
     
     Where:
     
-    @arg    <c><b>f</b></c> is the nullay functor called by this library to
+    @arg    <c><b>f</b></c> is the nullary functor called by this library to
             check preconditions @c f().
             Assertions within this functor are usually programmed using
             @RefMacro{BOOST_CONTRACT_ASSERT}, but any exception thrown by a call
