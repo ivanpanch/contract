@@ -180,7 +180,7 @@ Disable Contract Compilation}).
     Where:
 
     @arg    <c><b>f</b></c> is the nullary functor called by this library
-            @c f() to assign old value copies just before the body is execute
+            @c f() to assign old value copies just before the body is executed
             but after entry invariants (when they apply) and preconditions are
             checked.
             Old value pointers within this functor call are usually assigned
